@@ -1,0 +1,66 @@
+
+Aspect Ratio
+--aspect <width:height>
+or --ar <width:height>
+
+Popular Aspect Ratios
+→
+Change the aspect ratio of a generation. The default is 1:1 (square aspect ratio).
+
+
+Chaos
+--chaos <number 0-100>
+or --c <number 0-100>
+→
+Changed how varied and unpredictable your results are. The default is 0.
+
+
+Image Weight
+--iw <0–2>
+→
+Sets the strength of the image prompt relative to text prompt, for when you're doing image-to-image generations.
+The default value is 1. Setting this to 0 is the same as not using an image at all.
+
+
+No
+--no <anything you don't want>
+→
+Negative prompt, write what you don't want after. --no people removes people from a scene.
+
+
+Style
+--style <name of style>
+
+
+Image Prompts (img2img)
+<link to image>
+→
+One of Midjourney's most powerful and most underrated features.
+
+Use the content and style of existing images to generate a new image.
+You do this by including a link to the image in your prompt and writing the rest of the prompt as you normally would.
+
+
+Multi Prompts & Prompt Weights
+<concept 1>::<concept 1 weight>
+<concept 2>::<concept 2 weight>
+
+Prompt Weight Guide
+Adding a :: between phrases is a hard break: this tells Midjourney "these are separate concepts".
+
+You can add a number immediately after the double colon to assign the weight (relative importance) to that part of the prompt 
+(if you don't add a number the weight is 1.
+
+
+Permutation Prompts
+{<idea 1>, <idea 2>}
+Permutation Prompt Guide
+Permutation Prompts allow you to quickly generate variations of a prompt with a single /imagine command.
+
+Put lists of ideas separated with commas, within curly braces {} in your prompt
+
+Example:
+/imagine a {red, green, yellow} bird will produce 3 generations, and is the same as running:
+/imagine a red bird
+/imagine a green bird
+/imagine a yellow bird
